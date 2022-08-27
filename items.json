@@ -1,0 +1,95 @@
+
+
+  {
+   "items":[
+      {
+         "kind":"دراجه هوائيه",
+         "img":"pngbike/bike1.png",
+         "title":"Galaxy",
+         "price":3500,
+         "size":"29 جبلي",
+         "show":"عرض",
+         "add":"شراء",
+         "id":1
+        },
+   
+   {
+    "kind":"دراجه هوائيه",
+    "img":"pngbike/bike1.png",
+    "title":"Galaxy",
+    "price":3500,
+    "size":"29 جبلي",
+    "show":"عرض",
+    "add":"شراء",
+    "id":2
+   }
+   ,
+   {
+      "kind":"دراجه هوائيه",
+      "img":"pngbike/bike1.png",
+      "title":"Galaxy",
+      "price":3500,
+      "size":"29 جبلي",
+      "show":"عرض",
+      "add":"شراء",
+      "id":2
+     },
+     {
+      "kind":"دراجه هوائيه",
+      "img":"pngbike/bike1.png",
+      "title":"Galaxy",
+      "price":3500,
+      "size":"29 جبلي",
+      "show":"عرض",
+      "add":"شراء",
+      "id":2
+     },
+     {
+      "kind":"دراجه هوائيه",
+      "img":"pngbike/bike1.png",
+      "title":"Galaxy",
+      "price":3500,
+      "size":"29 جبلي",
+      "show":"عرض",
+      "add":"شراء",
+      "id":2
+     },
+     {
+      "kind":"دراجه هوائيه",
+      "img":"pngbike/bike1.png",
+      "title":"Galaxy",
+      "price":3500,
+      "size":"29 جبلي",
+      "show":"عرض",
+      "add":"شراء",
+      "id":2
+     }
+     ,{
+      "kind":"دراجه هوائيه",
+      "img":"pngbike/bike1.png",
+      "title":"Galaxy",
+      "price":3500,
+      "size":"29 جبلي",
+      "show":"عرض",
+      "add":"شراء",
+      "id":2
+     },
+     {
+      "kind":"دراجه هوائيه",
+      "img":"pngbike/bike1.png",
+      "title":"Galaxy",
+      "price":3500,
+      "size":"29 جبلي",
+      "show":"عرض",
+      "add":"شراء",
+      "id":2
+     }
+     ]
+     
+
+}
+  
+
+
+
+

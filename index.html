@@ -1,0 +1,1152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap/css/all.min.css">
+    <link rel="icon" href="Images/galaxy/images.jpg">
+    <title>My Bike</title>
+</head>
+<body>
+  <button class="btn text-center btn-outline-primary btn-sm Up" style="position:fixed; bottom: 20px; z-index: 100000; right: 20px; border-radius: 10px;"><i class="fas fa-level-up-alt"></i></button>
+  <main class="" style="position: relative; z-index: 1000000000;">
+    <nav class="navbar navbar-expand-lg navbar-light w-100" style="position:fixed; top: 0px; left: 0px;">
+      <i class="fa-light fa-brightness "></i>
+        <div class="container-fluid">
+          <button class="navbar-toggler bg-white"  type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" >
+            <span class="navbar-toggler-icon text-white"></span>
+          </button>
+          <div class="collapse navbar-collapse w-100  row" id="navbarNav" style="justify-content: center; padding:10px;">
+            <ul class="navbar-nav col-lg-11" style="direction: rtl;">
+              
+              <li class="nav-item ">
+                <a class="nav-link active text-light" aria-current="page" href="#">الرئيسيه</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#conect">تواصل معنا</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#cheack">المنتجات</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="sale/sale.html">التخفيضات</a>
+              </li>
+            </ul>
+          
+          </div>
+          <div class="col-lg-1">
+            <a class=" btn btn-sm btn-light justify-content-end" aria-current="page" href="login/login.html">تسجيل</a>
+           </div>
+          
+           <div class="shop" style="margin-right: 20px;">
+            
+            <button type="button" class="btn btn-light btn-sm position-relative" id="cartshop">
+              <i class="fas fa-shopping-cart fs-6 text-dark"></i>
+              <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                99+
+                <span class="visually-hidden">unread messages</span>
+              </span>
+            </button>
+            </div>
+       
+        <div class="translate bg-light">
+          <span class="text-center fs-4 spano bg-danger d-flex justify-content-center">لايوجد لديك منتجات<i class="fas fa-window-close"id="closes"></i></span>
+          <i class="fas fa-window-close"id="colse"></i>
+          <table class="table">
+            <thead>
+              <tr class="text-center">
+                <th scope="col">الصوره</th>
+                <th scope="col">الماركه</th>
+                <th scope="col">السعر</th>
+              </tr>
+            </thead>
+            <tbody class="class">
+
+            </tbody>
+
+          </table>
+          <div id="toto">: الاجمالي<span id="total"></span></div>
+        </div>
+        <i class='fas fa-toggle-off btns' style='font-size:36px'></i>
+      </nav>
+    </main>
+    <div id="carouselExampleIndicators" class="carousel slide bg-dark bg-opacity-10" data-bs-ride="carousel" style="padding:10px;">
+        <div class="carousel-indicators mb-0 dark">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active dark" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2" class="dark"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3" class="dark"></button>
+        </div>
+
+
+        <div class="carousel-inner container p-5">
+          
+          <div class="carousel-item active row">
+            <img src="pngbike/bike1.png" class="w-auto col-lg-6 col-md-12 col-sm-12 " alt="..." style="margin:auto;float: right; height:300px">
+            <div class="col-lg-6 col-md-12 col-sm-12 h-50 p-lg-5" style="justify-items: center;">
+                <h4 class="text-center text-dark fs-6 ">
+                  <span class="check">المواصفات</span>
+                    <span class="d-block text-lowecase check">
+                        نوع الدراجة: دراجة جبلية
+                    </span>
+                    <span class="d-block check">
+                         ماركة: <span class="fs-5 check">ترنيكس</span> 
+                    </span>
+                    <span class="d-block check"> 
+                        تعليق: <span class="fs-5 check">مزدوج</span> 
+                    </span>
+                    <span class="check">
+                         مقاس: <span class="fs-5 check">29</span> 
+                    </span>
+                    <div class="d-block check">
+                        نوع الفرامل: <span class="fs-5">قرص</span> 
+                    </div>
+                    <div class="d-block check">
+                         السلعه:<span class="fs-5">3 كجم</span> 
+                    </div>
+                    <div class="d-block check">
+                        <span class="d-block mb-3 check">الالوان</span> 
+                        <span class="fs-6" style="width: 80px; border-radius: 10%; background-color: orangered; direction:rtl; color: orangered; cursor: pointer;">..........</span> 
+                        <span class="fs-6" style="width: 80px; border-radius: 10%; background-color: blue; color: blue; cursor: pointer;">..........</span> 
+                        <span class="fs-6" style="width: 80px; border-radius: 10%; background-color: red; color: red; cursor: pointer;">..........</span> 
+                    </div>
+                    <div class="d-block check">
+                        السعر:<span class="fs-5">4000 جنيه</span> 
+                   </div>
+                </h4>
+            </div>
+          </div>
+          <div class="carousel-item row">
+            <img src="pngbike/kisspng-trek-bicycle-corporation-bicycle-frames-bicycle-wh-bikes-5ac7c58d7e8614.2984466015230416775183-removebg-preview.png" class="w-auto col-lg-6 col-md-6 col-sm-12 " alt="..." style="margin-top:12px;float: right; height:300px">
+            <div class="col-lg-6 col-md-12 col-sm-12 h-50 p-lg-5" style="justify-items: center;">
+                <h4 class="text-center text-dark fs-6 check">المواصفات
+                    <span class="d-block text-lowecase check">
+                        نوع الدراجة: دراجة جبلية
+                    </span>
+                    <span class="d-block check">
+                         ماركة: <span class="fs-5 check">ترنيكس</span> 
+                    </span>
+                    <span class="d-block check"> 
+                        تعليق: <span class="fs-5">مزدوج</span> 
+                    </span>
+                    <span class="check">
+                         مقاس: <span class="fs-5 check">29</span> 
+                    </span>
+                    <div class="d-block check">
+                        نوع الفرامل: <span class="fs-5 check">قرص</span> 
+                    </div>
+                    <div class="d-block check">
+                         السلعه:<span class="fs-5 check">3 كجم</span> 
+                    </div>
+                    <div class="d-block check">
+                      <span class="d-block mb-3 check">الالوان</span> 
+                      <span class="fs-6" style="width: 80px; border-radius: 10%; background-color: orangered; direction:rtl; color: orangered; cursor: pointer;">..........</span> 
+                      <span class="fs-6" style="width: 80px; border-radius: 10%; background-color: blue; color: blue; cursor: pointer;">..........</span> 
+                      <span class="fs-6" style="width: 80px; border-radius: 10%; background-color: red; color: red; cursor: pointer;">..........</span> 
+                  </div>
+                  <div class="d-block check">
+                      السعر:<span class="fs-5 check">4000 جنيه</span> 
+                 </div>
+                </h4>
+            </div>
+          </div>
+          <div class="carousel-item row">
+            <img src="pngbike/bike1.png" class="w-auto col-lg-6 col-md-6 col-sm-12 " alt="..." style="margin:auto;float: right; height:300px">
+            <div class="col-lg-6 col-md-12 col-sm-12 h-50 p-lg-5 " style="justify-items: center;">
+                <h4 class="text-center text-dark fs-6 check">المواصفات
+                    <span class="d-block text-lowecase check">
+                        نوع الدراجة: دراجة جبلية
+                    </span>
+                    <span class="d-block check">
+                         ماركة: <span class="fs-5 check">ترنيكس</span> 
+                    </span>
+                    <span class="d-block check"> 
+                        تعليق: <span class="fs-5 check">مزدوج</span> 
+                    </span>
+                    <span>
+                         مقاس: <span class="fs-5 check">29</span> 
+                    </span>
+                    <div class="d-block check">
+                        نوع الفرامل: <span class="fs-5 check">قرص</span> 
+                    </div>
+                    <div class="d-block check">
+                         السلعه:<span class="fs-5 check">3 كجم</span> 
+                    </div>
+                    <div class="d-block check">
+                      <span class="d-block mb-3 check">الالوان</span> 
+                      <span class="fs-6" style="width: 80px; border-radius: 10%; background-color: orangered; direction:rtl; color: orangered; cursor: pointer;">..........</span> 
+                      <span class="fs-6" style="width: 80px; border-radius: 10%; background-color: blue; color: blue; cursor: pointer;">..........</span> 
+                      <span class="fs-6" style="width: 80px; border-radius: 10%; background-color: red; color: red; cursor: pointer;">..........</span> 
+                  </div>
+                  <div class="d-block check">
+                      السعر:<span class="fs-5 check">4000 جنيه</span> 
+                 </div>
+                </h4>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button"  data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon bg-dark" aria-hidden="true"></span>
+          <span class="visually-hidden check">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon bg-dark" aria-hidden="true"></span>
+          <span class="visually-hidden check">Next</span>
+        </button>
+      </div>
+
+
+
+<div class="row gap-5 justify-content-center pt-5 rows">
+      <div class=" col-lg-3 col-sm-12 justify-content-center parents" style="width: 16rem; box-shadow:2px 2px 15px darkgrey;">
+        <img src="pngbike/kisspng-trek-bicycle-corporation-bicycle-frames-bicycle-wh-bikes-5ac7c58d7e8614.2984466015230416775183-removebg-preview.png" class="card-img-top w-100" alt="bike">
+        <div class="card-body">
+          <ul class="list-group list-group-flush" style="direction: rtl;">
+            <li class="check">النوع: دراجة هوائيه</li>
+            <li class="check">الماركه: ترنيكس</li>
+            <li class="check">المقاس: 29 جبلي</li>
+            <li class="check discount">السعر: <span class="discount">3500</span> جنيه</li>
+          </ul>
+          <div class="row justify-content-evenly mt-3 mb-3">
+            <a href="#" class="btn btn-outline-primary col-5 showicons 2"><i class="fas fa-shopping-cart"></i>شراء</a>
+            <a href="#" class="btn btn-outline-primary col-5"><i class="fas fa-eye"></i>عرض</a>
+           </div>
+           <div class="icon text-center">
+            <i class="far fa-star p-1 1" style="color: rgb(243, 169, 9); font-size: larger; cursor: pointer;"></i>
+            <i class="far fa-star p-1 2" style="color: rgb(243, 169, 9); font-size: larger; cursor: pointer;"></i>
+            <i class="far fa-star p-1 3" style="color: rgb(243, 169, 9); font-size: larger; cursor: pointer;"></i>
+            <i class="far fa-star p-1 4" style="color: rgb(243, 169, 9); font-size: larger; cursor: pointer;"></i>
+            <i class="far fa-star p-1 5" style="color: rgb(243, 169, 9); font-size: larger; cursor: pointer;"></i>
+           </div>
+        </div>
+      </div>
+      <div class=" col-lg-3 col-sm-6 parents" style="width: 16rem; box-shadow:2px 2px 15px darkgrey;">
+        <img src="pngbike/bike1.png" class="card-img-top" alt="bike">
+        <div class="card-body">
+          <ul class="list-group list-group-flush" style="direction: rtl;">
+            <li class="check">النوع: دراجة هوائيه</li>
+            <li class="check">الماركه: جلاكسي</li>
+            <li class="check">المقاس: 29 جبلي</li>
+            <li class="check discount">السعر: <span class="discount">3250</span> جنيه</li>
+          </ul>
+          <div class="row justify-content-evenly mt-3 mb-3">
+            <a href="#" class="btn btn-outline-primary col-5 showicons 2"><i class="fas fa-shopping-cart"></i>شراء</a>
+            <a href="#" class="btn btn-outline-primary col-5"><i class="fas fa-eye"></i>عرض</a>
+           </div>
+           <div class="icon text-center">
+            <i class="far fa-star p-1" style="color: rgb(243, 169, 9); font-size: larger; cursor: pointer; cursor: pointer;"></i>
+            <i class="far fa-star p-1" style="color: rgb(243, 169, 9); font-size: larger; cursor: pointer; cursor: pointer;"></i>
+            <i class="far fa-star p-1" style="color: rgb(243, 169, 9); font-size: larger; cursor: pointer; cursor: pointer;"></i>
+            <i class="far fa-star p-1" style="color: rgb(243, 169, 9); font-size: larger; cursor: pointer; cursor: pointer;"></i>
+            <i class="far fa-star p-1" style="color: rgb(243, 169, 9); font-size: larger; cursor: pointer; cursor: pointer;"></i>
+           </div>
+        </div>
+      </div>
+      <div class=" col-lg-3 col-sm-6 parents" style="width: 16rem; box-shadow:2px 2px 15px darkgrey;">
+        <img src="pngbike/bike1.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <ul class="list-group list-group-flush" style="direction: rtl;">
+            <li class="check">النوع: دراجة هوائيه</li>
+            <li class="check">الماركه: فونكس</li>
+            <li class="check">المقاس: 29 جبلي</li>
+            <li class="check discount">السعر: <span class="discount">2900</span> جنيه</li>
+          </ul>
+          <div class="row justify-content-evenly mt-3 mb-3">
+            <a href="#" class="btn btn-outline-primary col-5 showicons 3"><i class="fas fa-shopping-cart"></i>شراء</a>
+            <a href="#" class="btn btn-outline-primary col-5"><i class="fas fa-eye"></i>عرض</a>
+           </div>
+           <div class="icon text-center">
+            <i class="far fa-star p-1" style="color: rgb(243, 169, 9); font-size: larger; cursor: pointer; cursor: pointer; cursor: pointer;"></i>
+            <i class="far fa-star p-1" style="color: rgb(243, 169, 9); font-size: larger; cursor: pointer; cursor: pointer; cursor: pointer;"></i>
+            <i class="far fa-star p-1" style="color: rgb(243, 169, 9); font-size: larger; cursor: pointer; cursor: pointer; cursor: pointer;"></i>
+            <i class="far fa-star p-1" style="color: rgb(243, 169, 9); font-size: larger; cursor: pointer; cursor: pointer; cursor: pointer;"></i>
+            <i class="far fa-star p-1" style="color: rgb(243, 169, 9); font-size: larger; cursor: pointer; cursor: pointer; cursor: pointer;"></i>
+           </div>
+        </div>
+      </div>
+      <div class=" col-lg-3 col-sm-6 justify-content-center parents tirinix" style="width: 16rem; box-shadow:2px 2px 15px darkgrey;">
+        <img src="pngbike/bike1.png" class="card-img-top w-100 " alt="...">
+        <div class="card-body">
+          <ul class="list-group list-group-flush" style="direction: rtl;">
+            <li class="check">النوع: دراجة هوائيه</li>
+            <li class="check">الماركه: لينكون</li>
+            <li class="check">المقاس: 26 جبلي</li>
+            <li class="check discount">السعر: <span class="discount">2500</span> جنيه</li>
+          </ul>
+          <div class="row justify-content-evenly mt-3 mb-3">
+            <a href="#" class="btn btn-outline-primary col-5  showicons 4"><i class="fas fa-shopping-cart"></i>شراء</a>
+            <a href="#" class="btn btn-outline-primary col-5"><i class="fas fa-eye"></i>عرض</a>
+           </div>
+           <div class="icon text-center">
+            <i class="far fa-star p-1" style="color: rgb(243, 169, 9); font-size: larger; cursor: pointer; cursor: pointer; cursor: pointer; cursor: pointer;"></i>
+            <i class="far fa-star p-1" style="color: rgb(243, 169, 9); font-size: larger; cursor: pointer; cursor: pointer; cursor: pointer; cursor: pointer;"></i>
+            <i class="far fa-star p-1" style="color: rgb(243, 169, 9); font-size: larger; cursor: pointer; cursor: pointer; cursor: pointer; cursor: pointer;"></i>
+            <i class="far fa-star p-1" style="color: rgb(243, 169, 9); font-size: larger; cursor: pointer; cursor: pointer; cursor: pointer; cursor: pointer;"></i>
+            <i class="far fa-star p-1" style="color: rgb(243, 169, 9); font-size: larger; cursor: pointer; cursor: pointer; cursor: pointer; cursor: pointer;"></i>
+           </div>
+        </div>
+      </div>
+      <div class=" col-lg-3 col-sm-6 parents" style="width: 16rem; box-shadow:2px 2px 15px darkgrey;">
+        <img src="pngbike/bike1.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <ul class="list-group list-group-flush" style="direction: rtl;">
+            <li class="check">النوع: دراجة هوائيه</li>
+            <li class="check">الماركه: زووم</li>
+            <li class="check">المقاس: 29 جبلي</li>
+            <li class="check discount">السعر: <span class="discount">3000</span> جنيه</li>
+          </ul>
+          <div class="row justify-content-evenly mt-3 mb-3">
+            <a href="#" class="btn btn-outline-primary col-5 showicons 5"><i class="fas fa-shopping-cart"></i>شراء</a>
+            <a href="#" class="btn btn-outline-primary col-5"><i class="fas fa-eye"></i>عرض</a>
+           </div>
+           <div class="icon text-center">
+            <i class="far fa-star p-1" style="color: rgb(243, 169, 9); font-size: larger; cursor: pointer;"></i>
+            <i class="far fa-star p-1" style="color: rgb(243, 169, 9); font-size: larger; cursor: pointer;"></i>
+            <i class="far fa-star p-1" style="color: rgb(243, 169, 9); font-size: larger; cursor: pointer;"></i>
+            <i class="far fa-star p-1" style="color: rgb(243, 169, 9); font-size: larger; cursor: pointer;"></i>
+            <i class="far fa-star p-1" style="color: rgb(243, 169, 9); font-size: larger; cursor: pointer;" cursor: pointer; cursor: pointer; cursor: pointer; cursor: pointer;></i>
+           </div>
+        </div>
+      </div>
+      <div class=" col-lg-3 col-sm-6 parents" style="width: 16rem; box-shadow:2px 2px 15px darkgrey;">
+        <img src="pngbike/bike1.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <ul class="list-group list-group-flush" style="direction: rtl;">
+            <li class="check">النوع: دراجة اطفال</li>
+            <li class="check">الماركه: ميزون</li>
+            <li class="check">المقاس: 20 جبلي</li>
+            <li class="check discount">السعر: <span class="discount">1200</span> جنيه</li>
+          </ul>
+          <div class="row justify-content-evenly mt-3 mb-3">
+            <a href="#" class="btn btn-outline-primary col-5  showicons 6"><i class="fas fa-shopping-cart"></i>شراء</a>
+            <a href="#" class="btn btn-outline-primary col-5"><i class="fas fa-eye"></i>عرض</a>
+           </div>
+           <div class="icon text-center">
+            <i class="far fa-star p-1" style="color: rgb(243, 169, 9); font-size: larger; cursor: pointer; cursor: pointer;"></i>
+            <i class="far fa-star p-1" style="color: rgb(243, 169, 9); font-size: larger; cursor: pointer; cursor: pointer;"></i>
+            <i class="far fa-star p-1" style="color: rgb(243, 169, 9); font-size: larger; cursor: pointer; cursor: pointer;"></i>
+            <i class="far fa-star p-1" style="color: rgb(243, 169, 9); font-size: larger; cursor: pointer; cursor: pointer;"></i>
+            <i class="far fa-star p-1" style="color: rgb(243, 169, 9); font-size: larger; cursor: pointer; cursor: pointer;"></i>
+           </div>
+        </div>
+      </div>
+      <div class=" col-lg-3 col-sm-6 parents" style="width: 16rem; box-shadow:2px 2px 15px darkgrey;">
+        <img src="pngbike/bike1.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <ul class="list-group list-group-flush" style="direction: rtl;">
+            <li class="check">النوع: دراجة اطفال</li>
+            <li class="check">الماركه: ميزون</li>
+            <li class="check">المقاس: 20 جبلي</li>
+            <li class="check discount">السعر: <span class="discount">1200</span> جنيه</li>
+          </ul>
+          <div class="row justify-content-evenly mt-3 mb-3">
+            <a href="#" class="btn btn-outline-primary col-5  showicons 7"><i class="fas fa-shopping-cart"></i>شراء</a>
+            <a href="#" class="btn btn-outline-primary col-5"><i class="fas fa-eye"></i>عرض</a>
+           </div>
+           <div class="icon text-center">
+            <i class="far fa-star p-1" style="color: rgb(243, 169, 9); font-size: larger; cursor: pointer; cursor: pointer; cursor: pointer;"></i>
+            <i class="far fa-star p-1" style="color: rgb(243, 169, 9); font-size: larger; cursor: pointer; cursor: pointer; cursor: pointer;"></i>
+            <i class="far fa-star p-1" style="color: rgb(243, 169, 9); font-size: larger; cursor: pointer; cursor: pointer; cursor: pointer;"></i>
+            <i class="far fa-star p-1" style="color: rgb(243, 169, 9); font-size: larger; cursor: pointer; cursor: pointer; cursor: pointer;"></i>
+            <i class="far fa-star p-1" style="color: rgb(243, 169, 9); font-size: larger; cursor: pointer; cursor: pointer; cursor: pointer;"></i>
+           </div>
+        </div>
+      </div>
+      <div class=" col-lg-3 col-sm-6 parents" style="width: 16rem; box-shadow:2px 2px 15px darkgrey;">
+        <img src="pngbike/bike1.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <ul class="list-group list-group-flush" style="direction: rtl;">
+            <li class="check">النوع: دراجة اطفال</li>
+            <li class="check">الماركه: ميزون</li>
+            <li class="check">المقاس: 20 جبلي</li>
+            <li class="check discount">السعر: <span class="discount">1200</span> جنيه</li>
+          </ul>
+          <div class="row justify-content-evenly mt-3 mb-3">
+            <a href="#" class="btn btn-outline-primary col-5  showicons 8"><i class="fas fa-shopping-cart"></i>شراء</a>
+            <a href="#" class="btn btn-outline-primary col-5"><i class="fas fa-eye"></i>عرض</a>
+           </div>
+           <div class="icon text-center">
+            <i class="far fa-star p-1" style="color: rgb(243, 169, 9); font-size: larger; cursor: pointer; cursor: pointer; cursor: pointer; cursor: pointer;"></i>
+            <i class="far fa-star p-1" style="color: rgb(243, 169, 9); font-size: larger; cursor: pointer; cursor: pointer; cursor: pointer; cursor: pointer;"></i>
+            <i class="far fa-star p-1" style="color: rgb(243, 169, 9); font-size: larger; cursor: pointer; cursor: pointer; cursor: pointer; cursor: pointer;"></i>
+            <i class="far fa-star p-1" style="color: rgb(243, 169, 9); font-size: larger; cursor: pointer; cursor: pointer; cursor: pointer; cursor: pointer;"></i>
+            <i class="far fa-star p-1" style="color: rgb(243, 169, 9); font-size: larger; cursor: pointer; cursor: pointer; cursor: pointer; cursor: pointer;"></i>
+           </div>
+        </div>
+      </div>
+    </div>
+
+<!-- ------------------------------------Cheacked-------------------------------------------------------------- -->
+
+<div class="container-fluid row  mt-lg-5 mt-md-3 mt-sm-1 " id="cheack" style="position: relative; direction: rtl;" >
+
+
+
+  <div class="col-lg-3 col-md-12 col-sm-12" style="position:relative;">
+     <div style="position: sticky; top: 70px;">
+
+
+      <!-- ----------------------------------------------search------------------------------------------------------------- -->
+      <div class="input-group pb-5">
+        <div class="form-outline">
+          <input type="search" id="form1" placeholder="Search" class="form-control"/>
+        </div>
+        <span id="sea"></span>
+        <!-- <button type="button" class="btn btn-primary" style="border-radius: 5px 0px 0px 5px;" id="btns">
+          <i class="fas fa-search"></i>
+        </button>  -->
+        <span id="spans"></span>
+      </div>
+      
+<div class="row check">
+      <div class="form-check check col-lg-11 col-md-3 col-6 mt-3" data-cat=".All">
+        <input class="form-check-input" type="radio" name="flexRadioDefault" id="all" checked>
+        <label class="form-check-label" for="all" style="text-align:right;">
+  الكل / All  
+   </label>
+      </div>
+
+    <div class="form-check col-lg-11 col-md-3 col-6 mt-3 check" data-cat=".trnix">
+      <input class="form-check-input" type="radio" name="flexRadioDefault" id="trnix">
+      <label class="form-check-label" for="trnix">
+      ترنيكس / Trinix 
+  </label>
+    </div>
+    <div class="form-check col-lg-11 col-md-3 col-6 mt-3 check" data-cat=".phonex">
+      <input class="form-check-input" type="radio" name="flexRadioDefault" id="phonex" >
+      <label class="form-check-label" for="phonex">
+      فونكس / Phonex
+      </label>
+    </div>
+     
+    <div class="form-check col-lg-11 col-md-3 col-sm-3 col-6 mt-3 check" data-cat=".galaxy">
+      <input class="form-check-input" type="radio" name="flexRadioDefault" id="galaxy">
+      <label class="form-check-label" for="galaxy">
+         جلاكسي / Galaxy
+      </label>
+    </div>
+    <div class="form-check col-lg-11 col-md-3 col-6 mt-3 check">
+      <input class="form-check-input" type="radio" name="flexRadioDefault" id="xnirt" >
+      <label class="form-check-label" for="xnirt">
+        زووم / Zoom      
+      </label>
+    </div>
+    <div class="form-check col-lg-11 col-md-3 col-6 mt-3 check">
+      <input class="form-check-input" type="radio" name="flexRadioDefault" id="lenkon" >
+      <label class="form-check-label" for="lenkon">
+     لينكون / Lenkon
+       </label>
+    </div>
+    <div class="form-check col-lg-11 col-md-3 col-6 mt-3 check">
+      <input class="form-check-input" type="radio" name="flexRadioDefault" id="acc" >
+      <label class="form-check-label" for="acc">
+        الاكسسوارات / Accsossry
+      </label>
+    </div>
+   
+  
+  </div>
+    <!-- <div class="form-check">
+     
+      <label class="form-check-label" for="flexRadioDefault2">
+       
+      </label>
+    </div> -->
+   
+   
+  </div>
+  </div>
+
+
+
+
+
+
+<div class="col-lg-9">
+
+ <div class="row col-12 gap-3 justify-content-center master" id="xontainer">
+  <!-- <div class=" "> -->
+<!-- ------------------------------------product1-------------------------------------------------------------- -->
+<div class="searchs p-0 col-lg-4 All trnix imgs " style="width: 14rem; box-shadow:2px 2px 15px darkgrey;">
+  <img src="Images/trnix/41X22xad-UL._AC_SY580_.jpg" class="card-img-top " alt="This Bike (tirnix Trnixi ternix TRINIX TRNIX ترنكس تيرينيكس ترنيكيس)">
+  <div class="text-center card-body">
+    <h5 class="card-title text-center check">ترنيكس</h5>
+    <p class="card-text check">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  </div>
+  <div class="icon text-center">
+    <i class="far fa-star p-1 check" style="color: rgb(243, 169, 9); font-size: larger; cursor: pointer; cursor: pointer; cursor: pointer; cursor: pointer; cursor: pointer;"></i>
+    <i class="far fa-star p-1 check" style="color: rgb(243, 169, 9); font-size: larger; cursor: pointer; cursor: pointer; cursor: pointer; cursor: pointer; cursor: pointer;"></i>
+    <i class="far fa-star p-1 check" style="color: rgb(243, 169, 9); font-size: larger; cursor: pointer; cursor: pointer; cursor: pointer; cursor: pointer; cursor: pointer;"></i>
+    <i class="far fa-star p-1 check" style="color: rgb(243, 169, 9); font-size: larger; cursor: pointer; cursor: pointer; cursor: pointer; cursor: pointer; cursor: pointer;"></i>
+    <i class="far fa-star p-1 check" style="color: rgb(243, 169, 9); font-size: larger; cursor: pointer; cursor: pointer; cursor: pointer; cursor: pointer; cursor: pointer;"></i>
+   </div>
+  <ul class="list-group list-group-flush " style="direction: rtl;">
+    <li class="check ">النوع: دراجة هوائيه</li>
+    <li class="check ">الماركه: ترنيكس</li>
+    <li class="check ">المقاس: 29 جبلي</li>
+    <lcheck discount">السعر: <span class="discount">3500</span> جنيه</li>
+  </ul>
+  <div class="row justify-content-evenly mt-3 mb-3">
+    <a href="#" class="btn btn-outline-primary col-5  showicons"><i class="fas fa-shopping-cart"></i>شراء</a>
+    <a href="#" class="btn btn-outline-primary col-5"><i class="fas fa-eye"></i>عرض</a>
+   </div>
+  
+</div>
+
+        
+
+<!-- ------------------------------------product2-------------------------------------------------------------- -->
+
+<div class="searchs p-0 col-lg-4 All trnix imgs" style="width: 14rem; box-shadow:2px 2px 15px darkgrey;">
+  <img src="Images/trnix/81xQPVWd9NL.jpg" class="card-img-top" alt="This Bike (tirnix Trnixi ternix TRINIX TRNIX ترنكس تيرينيكس ترنيكيس)">
+  <div class="text-center card-body">
+    <h5 class="card-title text-center check">ترنيكس</h5>
+    <p class="card-text check">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  </div>
+  <div class="icon text-center">
+    <i class="far fa-star p-1" style="color: rgb(243, 169, 9); font-size: larger; cursor: pointer; cursor: pointer; cursor: pointer; cursor: pointer; cursor: pointer; cursor: pointer;"></i>
+    <i class="far fa-star p-1" style="color: rgb(243, 169, 9); font-size: larger; cursor: pointer; cursor: pointer; cursor: pointer; cursor: pointer; cursor: pointer; cursor: pointer;"></i>
+    <i class="far fa-star p-1" style="color: rgb(243, 169, 9); font-size: larger; cursor: pointer; cursor: pointer; cursor: pointer; cursor: pointer; cursor: pointer; cursor: pointer;"></i>
+    <i class="far fa-star p-1" style="color: rgb(243, 169, 9); font-size: larger; cursor: pointer; cursor: pointer; cursor: pointer; cursor: pointer; cursor: pointer; cursor: pointer;"></i>
+    <i class="far fa-star p-1" style="color: rgb(243, 169, 9); font-size: larger; cursor: pointer; cursor: pointer; cursor: pointer; cursor: pointer; cursor: pointer; cursor: pointer;"></i>
+   </div>
+  <ul class="list-group list-group-flush" style="direction: rtl;">
+    <li class="check">النوع: دراجة هوائيه</li>
+            <li class="check">الماركه: ترنيكس</li>
+            <li class="check">المقاس: 29 جبلي</li>
+            <li class="check discount">السعر: <span class="discount">3200</span> جنيه</li>
+  </ul>
+  
+    <div class="row justify-content-evenly mt-3 mb-3">
+      <a href="#" class="btn btn-outline-primary col-5  showicons"><i class="fas fa-shopping-cart"></i>شراء</a>
+      <a href="#" class="btn btn-outline-primary col-5"><i class="fas fa-eye"></i>عرض</a>
+     
+  </div>
+</div>
+
+
+<!-- ------------------------------------product3-------------------------------------------------------------- -->
+
+<div class="searchs p-0 col-lg-4 All trnix imgs" style="width: 14rem; box-shadow:2px 2px 15px darkgrey;">
+  <img src="Images/trnix/download.jpg" class="card-img-top" alt="This Bike (tirnix Trnixi ternix TRINIX TRNIX ترنكس تيرينيكس ترنيكيس)">
+  <div class="text-center card-body ">
+    <h5 class="card-title text-center check">ترنيكس</h5>
+    <p class="card-text check">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  </div>
+  <div class="icon text-center">
+    <i class="far fa-star p-1" style="color: rgb(243, 169, 9); font-size: larger; cursor: pointer; cursor: pointer; cursor: pointer; cursor: pointer; cursor: pointer; cursor: pointer; cursor: pointer;"></i>
+    <i class="far fa-star p-1" style="color: rgb(243, 169, 9); font-size: larger; cursor: pointer; cursor: pointer; cursor: pointer; cursor: pointer; cursor: pointer; cursor: pointer; cursor: pointer;"></i>
+    <i class="far fa-star p-1" style="color: rgb(243, 169, 9); font-size: larger; cursor: pointer; cursor: pointer; cursor: pointer; cursor: pointer; cursor: pointer; cursor: pointer; cursor: pointer;"></i>
+    <i class="far fa-star p-1" style="color: rgb(243, 169, 9); font-size: larger; cursor: pointer; cursor: pointer; cursor: pointer; cursor: pointer; cursor: pointer; cursor: pointer; cursor: pointer;"></i>
+    <i class="far fa-star p-1" style="color: rgb(243, 169, 9); font-size: larger; cursor: pointer; cursor: pointer; cursor: pointer; cursor: pointer; cursor: pointer; cursor: pointer; cursor: pointer;"></i>
+   </div>
+  <ul class="list-group list-group-flush" style="direction: rtl;">
+    <li class="check">النوع: دراجة هوائيه</li>
+    <li class="check">الماركه: ترنيكس</li>
+    <li class="check">المقاس: 29 جبلي</li>
+    <li class="check discount">السعر: <span class="discount">3000</span> جنيه</li>
+  </ul>
+ 
+    <div class="row justify-content-evenly mt-3 mb-3">
+      <a href="#" class="btn btn-outline-primary col-5  showicons"><i class="fas fa-shopping-cart"></i>شراء</a>
+      <a href="#" class="btn btn-outline-primary col-5"><i class="fas fa-eye"></i>عرض</a>
+    
+  </div>
+</div>
+
+
+<!-- ------------------------------------product4-------------------------------------------------------------- -->
+
+
+
+<div class="searchs p-0 col-lg-4 All trnix imgs" style="width: 14rem; box-shadow:2px 2px 15px darkgrey;">
+  <img src="Images/trnix/f4038814d7d82e8817318ac6d52683b3f880cdfa.jpg" class="card-img-top" alt="This Bike (tirnix Trnixi ternix TRINIX TRNIX ترنكس تيرينيكس ترنيكيس)">
+  <div class="text-center card-body">
+    <h5 class="card-title text-center check">ترنيكس</h5>
+    <p class="card-text check">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  </div>
+  <div class="icon text-center">
+    <i class="far fa-star p-1" style="color: rgb(243, 169, 9); font-size: larger;  cursor: pointer; cursor: pointer; cursor: pointer; cursor: pointer; cursor: pointer; cursor: pointer; cursor: pointer;"></i>
+    <i class="far fa-star p-1" style="color: rgb(243, 169, 9); font-size: larger; cursor: pointer;"></i>
+    <i class="far fa-star p-1" style="color: rgb(243, 169, 9); font-size: larger; cursor: pointer;"></i>
+    <i class="far fa-star p-1" style="color: rgb(243, 169, 9); font-size: larger; cursor: pointer;"></i>
+    <i class="far fa-star p-1" style="color: rgb(243, 169, 9); font-size: larger; cursor: pointer;"></i>
+   </div>
+  <ul class="list-group list-group-flush" style="direction: rtl;">
+    <li class="check">النوع: دراجة هوائيه</li>
+    <li class="check">الماركه: ترنيكس</li>
+    <li class="check">المقاس: 29 جبلي</li>
+    <li class="check discount">السعر: <span class="discount">3750</span> جنيه</li>
+  </ul>
+
+    <div class="row justify-content-evenly mt-3 mb-3">
+      <a href="#" class="btn btn-outline-primary col-5  showicons"><i class="fas fa-shopping-cart"></i>شراء</a>
+      <a href="#" class="btn btn-outline-primary col-5"><i class="fas fa-eye"></i>عرض</a>
+  
+  </div>
+</div>
+
+
+<!-- ------------------------------------product5-------------------------------------------------------------- -->
+
+
+
+<div class="searchs p-0 col-lg-4 All trnix imgs" style="width: 14rem; box-shadow:2px 2px 15px darkgrey;">
+  <img src="Images/trnix/hqdefault.jpg" class="card-img-top" alt="This Bike (tirnix Trnixi ternix TRINIX TRNIX ترنكس تيرينيكس ترنيكيس)">
+  <div class="text-center card-body">
+    <h5 class="card-title text-center check">ترنيكس</h5>
+    <p class="card-text check">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  </div>
+  <div class="icon text-center">
+    <i class="far fa-star p-1" style="color: rgb(243, 169, 9); font-size: larger; cursor: pointer;"></i>
+    <i class="far fa-star p-1" style="color: rgb(243, 169, 9); font-size: larger; cursor: pointer;"></i>
+    <i class="far fa-star p-1" style="color: rgb(243, 169, 9); font-size: larger; cursor: pointer;"></i>
+    <i class="far fa-star p-1" style="color: rgb(243, 169, 9); font-size: larger; cursor: pointer;"></i>
+    <i class="far fa-star p-1" style="color: rgb(243, 169, 9); font-size: larger; cursor: pointer;"></i>
+   </div>
+  <ul class="list-group list-group-flush" style="direction: rtl;">
+    <check">النوع: دراجة هوائيه</li>
+            <li class="check">الماركه: ترنيكس</li>
+            <li class="check">المقاس: 29 جبلي</li>
+            <li class="check discount">السعر: <span class="discount">3250</span> جنيه</li>
+  </ul>
+    <div class="row justify-content-evenly mt-3 mb-3">
+      <a href="#" class="btn btn-outline-primary col-5  showicons"><i class="fas fa-shopping-cart"></i>شراء</a>
+      <a href="#" class="btn btn-outline-primary col-5"><i class="fas fa-eye"></i>عرض</a>
+    
+  </div>
+</div>
+
+<!-- ------------------------------------product6-------------------------------------------------------------- -->
+
+
+
+
+<div class="searchs p-0 col-lg-4 All trnix imgs" style="width: 14rem; box-shadow:2px 2px 15px darkgrey;">
+  <img src="Images/trnix/maxresdefault.jpg" class="card-img-top" alt="This Bike (tirnix Trnixi ternix TRINIX TRNIX ترنكس تيرينيكس ترنيكيس)">
+  <div class="text-center card-body">
+    <h5 class="card-title text-center check">ترنيكس</h5>
+    <p class="card-text check">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  </div>
+  <div class="icon text-center">
+    <i class="far fa-star p-1" style="color: rgb(243, 169, 9); font-size: larger; cursor: pointer;"></i>
+    <i class="far fa-star p-1" style="color: rgb(243, 169, 9); font-size: larger; cursor: pointer;"></i>
+    <i class="far fa-star p-1" style="color: rgb(243, 169, 9); font-size: larger; cursor: pointer;"></i>
+    <i class="far fa-star p-1" style="color: rgb(243, 169, 9); font-size: larger; cursor: pointer;"></i>
+    <i class="far fa-star p-1" style="color: rgb(243, 169, 9); font-size: larger; cursor: pointer;"></i>
+   </div>
+  <ul class="list-group list-group-flush" style="direction: rtl;">
+    <li class="check">النوع: دراجة هوائيه</li>
+    <li class="check">الماركه: ترنيكس</li>
+    <li class="check">المقاس: 29 جبلي</li>
+    <li class="check discount">السعر: <span class="discount">3500</span> جنيه</li>
+  </ul>
+ 
+    <div class="row justify-content-evenly mt-3 mb-3">
+      <a href="#" class="btn btn-outline-primary col-5  showicons"><i class="fas fa-shopping-cart"></i>شراء</a>
+      <a href="#" class="btn btn-outline-primary col-5"><i class="fas fa-eye"></i>عرض</a>
+  </div>
+</div>
+
+
+<!-- ------------------------------------product7-------------------------------------------------------------- -->
+<!-- <div class=" row gap-3 justify-content-center"> -->
+
+<div class="searchs p-0 col-lg-4 All phonex imgs" style="width: 14rem; box-shadow:2px 2px 15px darkgrey;">
+  <img src="Images/phonex/download (1).jpg" class="card-img-top" alt="This Bike (PHONEX phonks fonix fonx)">
+  <div class="text-center card-body">
+    <h5 class="card-title text-center check">فونكس</h5>
+    <p class="card-text check">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  </div>
+  <div class="icon text-center">
+    <i class="far fa-star p-1" style="color: rgb(243, 169, 9); font-size: larger; cursor: pointer;"></i>
+    <i class="far fa-star p-1" style="color: rgb(243, 169, 9); font-size: larger; cursor: pointer;"></i>
+    <i class="far fa-star p-1" style="color: rgb(243, 169, 9); font-size: larger; cursor: pointer;"></i>
+    <i class="far fa-star p-1" style="color: rgb(243, 169, 9); font-size: larger; cursor: pointer;"></i>
+    <i class="far fa-star p-1" style="color: rgb(243, 169, 9); font-size: larger; cursor: pointer;"></i>
+   </div>
+  <ul class="list-group list-group-flush" style="direction: rtl;">
+    <li class="check">النوع: دراجة هوائيه</li>
+            <li class="check">الماركه: فونكس</li>
+            <li class="check">المقاس: 29 جبلي</li>
+            <li class="check discount">السعر: <span class="discount">2900</span> جنيه</li>
+  </ul>
+  <div class="row justify-content-evenly mt-3 mb-3">
+    <a href="#" class="btn btn-outline-primary col-5  showicons"><i class="fas fa-shopping-cart"></i>شراء</a>
+    <a href="#" class="btn btn-outline-primary col-5"><i class="fas fa-eye"></i>عرض</a>
+   </div>
+</div>
+
+
+<!-- ------------------------------------product8-------------------------------------------------------------- -->
+
+
+<div class="searchs p-0 col-lg-4 All phonex imgs" style="width: 14rem; box-shadow:2px 2px 15px darkgrey;">
+  <img src="Images/phonex/download (2).jpg" class="card-img-top" alt="This Bike (PHONEX phonks fonix fonx)">
+  <div class="text-center card-body">
+    <h5 class="card-title text-center check">فونكس</h5>
+    <p class="card-text check">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  </div>
+  <div class="icon text-center">
+    <i class="far fa-star p-1" style="color: rgb(243, 169, 9); font-size: larger; cursor: pointer;"></i>
+    <i class="far fa-star p-1" style="color: rgb(243, 169, 9); font-size: larger; cursor: pointer;"></i>
+    <i class="far fa-star p-1" style="color: rgb(243, 169, 9); font-size: larger; cursor: pointer;"></i>
+    <i class="far fa-star p-1" style="color: rgb(243, 169, 9); font-size: larger; cursor: pointer;"></i>
+    <i class="far fa-star p-1" style="color: rgb(243, 169, 9); font-size: larger; cursor: pointer;"></i>
+   </div>
+  <ul class="list-group list-group-flush" style="direction: rtl;">
+    <li class="check">النوع: دراجة هوائيه</li>
+            <li class="check">الماركه: فونكس</li>
+            <li class="check">المقاس: 29 جبلي</li>
+            <li class="check discount">السعر: <span class="discount">2600</span> جنيه</li>
+  </ul>
+  <div class="row justify-content-evenly mt-3 mb-3">
+    <a href="#" class="btn btn-outline-primary col-5  showicons"><i class="fas fa-shopping-cart"></i>شراء</a>
+    <a href="#" class="btn btn-outline-primary col-5"><i class="fas fa-eye"></i>عرض</a>
+   </div>
+</div>
+
+
+<!-- ------------------------------------product9-------------------------------------------------------------- -->
+
+
+
+<div class="searchs p-0 col-lg-4 All phonex imgs" style="width: 14rem; box-shadow:2px 2px 15px darkgrey;">
+  <img src="Images/phonex/download (3).jpg" class="card-img-top" alt="This Bike (PHONEX phonks fonix fonx)">
+  <div class="text-center card-body">
+    <h5 class="card-title text-center check">فونكس</h5>
+    <p class="card-text check">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  </div>
+  <div class="icon text-center">
+    <i class="far fa-star p-1" style="color: rgb(243, 169, 9); font-size: larger; cursor: pointer;"></i>
+    <i class="far fa-star p-1" style="color: rgb(243, 169, 9); font-size: larger; cursor: pointer;"></i>
+    <i class="far fa-star p-1" style="color: rgb(243, 169, 9); font-size: larger; cursor: pointer;"></i>
+    <i class="far fa-star p-1" style="color: rgb(243, 169, 9); font-size: larger; cursor: pointer;"></i>
+    <i class="far fa-star p-1" style="color: rgb(243, 169, 9); font-size: larger; cursor: pointer;"></i>
+   </div>
+  <ul class="list-group list-group-flush" style="direction: rtl;">
+    <li class="check">النوع: دراجة هوائيه</li>
+    <li class="check">الماركه: فونكس</li>
+    <li class="check">المقاس: 29 جبلي</li>
+    <li class="check discount">السعر: <span class="discount">2500</span> جنيه</li>
+  </ul>
+  <div class="row justify-content-evenly mt-3 mb-3">
+    <a href="#" class="btn btn-outline-primary col-5  showicons"><i class="fas fa-shopping-cart"></i>شراء</a>
+    <a href="#" class="btn btn-outline-primary col-5"><i class="fas fa-eye"></i>عرض</a>
+   </div>
+</div>
+
+
+
+<!-- ------------------------------------product10-------------------------------------------------------------- -->
+
+
+<div class="searchs p-0 col-lg-4 All phonex imgs" style="width: 14rem; box-shadow:2px 2px 15px darkgrey;">
+  <img src="Images/phonex/download (4).jpg" class="card-img-top" alt="This Bike (PHONEX phonks fonix fonx)">
+  <div class="text-center card-body">
+    <h5 class="card-title text-center check">فونكس</h5>
+    <p class="card-text check">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  </div>
+  <div class="icon text-center">
+    <i class="far fa-star p-1" style="color: rgb(243, 169, 9); font-size: larger; cursor: pointer;"></i>
+    <i class="far fa-star p-1" style="color: rgb(243, 169, 9); font-size: larger; cursor: pointer;"></i>
+    <i class="far fa-star p-1" style="color: rgb(243, 169, 9); font-size: larger; cursor: pointer;"></i>
+    <i class="far fa-star p-1" style="color: rgb(243, 169, 9); font-size: larger; cursor: pointer;"></i>
+    <i class="far fa-star p-1" style="color: rgb(243, 169, 9); font-size: larger; cursor: pointer;"></i>
+   </div>
+  <ul class="list-group list-group-flush" style="direction: rtl;">
+    <li class="check">النوع: دراجة هوائيه</li>
+    <li class="check">الماركه: فونكس</li>
+    <li class="check">المقاس: 29 جبلي</li>
+    <li class="check discount">السعر: <span class="discount">2600</span> جنيه</li>
+  </ul>
+  <div class="row justify-content-evenly mt-3 mb-3">
+    <a href="#" class="btn btn-outline-primary col-5  showicons"><i class="fas fa-shopping-cart"></i>شراء</a>
+    <a href="#" class="btn btn-outline-primary col-5"><i class="fas fa-eye"></i>عرض</a>
+   </div>
+</div>
+
+
+<!-- ------------------------------------product11-------------------------------------------------------------- -->
+
+
+
+
+<div class="searchs p-0 col-lg-4 All phonex imgs" style="width: 14rem; box-shadow:2px 2px 15px darkgrey;">
+  <img src="Images/phonex/download.jpg" class="card-img-top" alt="This Bike (PHONEX phonks fonix fonx)">
+  <div class="text-center card-body">
+    <h5 class="card-title text-center check">فونكس</h5>
+    <p class="card-text check">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  </div>
+  <div class="icon text-center">
+    <i class="far fa-star p-1" style="color: rgb(243, 169, 9); font-size: larger; cursor: pointer;"></i>
+    <i class="far fa-star p-1" style="color: rgb(243, 169, 9); font-size: larger; cursor: pointer;"></i>
+    <i class="far fa-star p-1" style="color: rgb(243, 169, 9); font-size: larger; cursor: pointer;"></i>
+    <i class="far fa-star p-1" style="color: rgb(243, 169, 9); font-size: larger; cursor: pointer;"></i>
+    <i class="far fa-star p-1" style="color: rgb(243, 169, 9); font-size: larger; cursor: pointer;"></i>
+   </div>
+  <ul class="list-group list-group-flush" style="direction: rtl;">
+    <li class="check">النوع: دراجة هوائيه</li>
+    <li class="check">الماركه: فونكس</li>
+    <li class="check">المقاس: 29 جبلي</li>
+    <li class="check discount">السعر: <span class="discount">2800</span> جنيه</li>
+  </ul>
+  <div class="row justify-content-evenly mt-3 mb-3">
+    <a href="#" class="btn btn-outline-primary col-5  showicons"><i class="fas fa-shopping-cart"></i>شراء</a>
+    <a href="#" class="btn btn-outline-primary col-5"><i class="fas fa-eye"></i>عرض</a>
+   </div>
+</div>
+
+
+<!-- ------------------------------------product12-------------------------------------------------------------- -->
+
+
+<div class="searchs p-0 col-lg-4 All phonex imgs" style="width: 14rem; box-shadow:2px 2px 15px darkgrey;">
+  <img src="Images/phonex/mqdefault.jpg" class="card-img-top" alt="This Bike (PHONEX phonks fonix fonx)">
+  <div class="text-center card-body">
+    <h5 class="card-title text-center check">فونكس</h5>
+    <p class="card-text check">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  </div>
+  <div class="icon text-center">
+    <i class="far fa-star p-1" style="color: rgb(243, 169, 9); font-size: larger; cursor: pointer;"></i>
+    <i class="far fa-star p-1" style="color: rgb(243, 169, 9); font-size: larger; cursor: pointer;"></i>
+    <i class="far fa-star p-1" style="color: rgb(243, 169, 9); font-size: larger; cursor: pointer;"></i>
+    <i class="far fa-star p-1" style="color: rgb(243, 169, 9); font-size: larger; cursor: pointer;"></i>
+    <i class="far fa-star p-1" style="color: rgb(243, 169, 9); font-size: larger; cursor: pointer;"></i>
+   </div>
+  <ul class="list-group list-group-flush" style="direction: rtl;">
+    <li class="check">النوع: دراجة هوائيه</li>
+    <li class="check">الماركه: فونكس</li>
+    <li class="check">المقاس: 29 جبلي</li>
+    <li class="check discount">السعر: <span class="discount">2900</span> جنيه</li>
+  </ul>
+  <div class="row justify-content-evenly mt-3 mb-3">
+    <a href="#" class="btn btn-outline-primary col-5  showicons"><i class="fas fa-shopping-cart"></i>شراء</a>
+    <a href="#" class="btn btn-outline-primary col-5"><i class="fas fa-eye"></i>عرض</a>
+   </div>
+</div>
+
+<!-- </div> -->
+<!-- ------------------------------------product13-------------------------------------------------------------- -->
+
+<!-- <div class=" row gap-3 justify-content-center"> -->
+
+
+<div class="searchs p-0 col-lg-4 All galaxy imgs" style="width: 14rem; box-shadow:2px 2px 15px darkgrey;">
+  <img src="Images/galaxy/29a5_2.jpg" class="card-img-top" alt="This Bike GALAXY Gelaxy gelaxy galaxay">
+  <div class="text-center card-body">
+    <h5 class="card-title text-center check">جلاكسي</h5>
+    <p class="card-text check">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  </div>
+  <div class="icon text-center">
+    <i class="far fa-star p-1" style="color: rgb(243, 169, 9); font-size: larger; cursor: pointer;"></i>
+    <i class="far fa-star p-1" style="color: rgb(243, 169, 9); font-size: larger; cursor: pointer;"></i>
+    <i class="far fa-star p-1" style="color: rgb(243, 169, 9); font-size: larger; cursor: pointer;"></i>
+    <i class="far fa-star p-1" style="color: rgb(243, 169, 9); font-size: larger; cursor: pointer;"></i>
+    <i class="far fa-star p-1" style="color: rgb(243, 169, 9); font-size: larger; cursor: pointer;"></i>
+   </div>
+  <ul class="list-group list-group-flush" style="direction: rtl;">
+    <li class="check">النوع: دراجة هوائيه</li>
+            <li class="check">الماركه: جلاكسي</li>
+            <li class="check">المقاس: 29 جبلي</li>
+            <li class="check discount">السعر: <span class="discount">3250</span> جنيه</li>
+  </ul>
+  <div class="row justify-content-evenly mt-3 mb-3">
+    <a href="#" class="btn btn-outline-primary col-5  showicons"><i class="fas fa-shopping-cart"></i>شراء</a>
+    <a href="#" class="btn btn-outline-primary col-5"><i class="fas fa-eye"></i>عرض</a>
+   </div>
+</div>
+
+<!-- ------------------------------------product14-------------------------------------------------------------- -->
+
+
+<div class="searchs p-0 col-lg-4 All galaxy imgs" style="width: 14rem; box-shadow:2px 2px 15px darkgrey;">
+  <img src="Images/galaxy/41-7M-s8W+S._SR600,315_PIWhiteStrip,BottomLeft,0,35_SCLZZZZZZZ_FMpng_BG255,255,255.png" class="card-img-top" alt="This Bike GALAXY Gelaxy gelaxy galaxay">
+  <div class="text-center card-body">
+    <h5 class="card-title text-center check">جلاكسي</h5>
+    <p class="card-text check">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  </div>
+  <div class="icon text-center">
+    <i class="far fa-star p-1" style="color: rgb(243, 169, 9); font-size: larger; cursor: pointer;"></i>
+    <i class="far fa-star p-1" style="color: rgb(243, 169, 9); font-size: larger; cursor: pointer;"></i>
+    <i class="far fa-star p-1" style="color: rgb(243, 169, 9); font-size: larger; cursor: pointer;"></i>
+    <i class="far fa-star p-1" style="color: rgb(243, 169, 9); font-size: larger; cursor: pointer;"></i>
+    <i class="far fa-star p-1" style="color: rgb(243, 169, 9); font-size: larger; cursor: pointer;"></i>
+   </div>
+  <ul class="search list-group list-group-flush" style="direction: rtl;">
+    <li class="check">النوع: دراجة هوائيه</li>
+            <li class="check">الماركه: جلاكسي</li>
+            <li class="check">المقاس: 29 جبلي</li>
+            <li class="check discount">السعر: <span class="discount">3000</span> جنيه</li>
+  </ul>
+  <div class="row justify-content-evenly mt-3 mb-3">
+    <a href="#" class="btn btn-outline-primary col-5  showicons"><i class="fas fa-shopping-cart"></i>شراء</a>
+    <a href="#" class="btn btn-outline-primary col-5"><i class="fas fa-eye"></i>عرض</a>
+   </div>
+</div>
+
+<!-- ------------------------------------product15-------------------------------------------------------------- -->
+
+
+<div class="searchs p-0 col-lg-4 All galaxy imgs" style="width: 14rem; box-shadow:2px 2px 15px darkgrey;">
+  <img src="Images/galaxy/816CSWY0FQS.jpg" class="card-img-top" alt="This Bike GALAXY Gelaxy gelaxy galaxay">
+  <div class="text-center card-body">
+    <h5 class="card-title text-center check">جلاكسي</h5>
+    <p class="card-text check">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  </div>
+  <div class="icon text-center">
+    <i class="far fa-star p-1" style="color: rgb(243, 169, 9); font-size: larger; cursor: pointer;"></i>
+    <i class="far fa-star p-1" style="color: rgb(243, 169, 9); font-size: larger; cursor: pointer;"></i>
+    <i class="far fa-star p-1" style="color: rgb(243, 169, 9); font-size: larger; cursor: pointer;"></i>
+    <i class="far fa-star p-1" style="color: rgb(243, 169, 9); font-size: larger; cursor: pointer;"></i>
+    <i class="far fa-star p-1" style="color: rgb(243, 169, 9); font-size: larger; cursor: pointer;"></i>
+   </div>
+  <ul class="list-group list-group-flush" style="direction: rtl;">
+    <li class="check">النوع: دراجة هوائيه</li>
+    <li class="check">الماركه: جلاكسي</li>
+    <li class="check">المقاس: 29 جبلي</li>
+    <li class="check discount">السعر: <span class="discount">2800</span> جنيه</li>
+  </ul>
+  <div class="row justify-content-evenly mt-3 mb-3">
+    <a href="#" class="btn btn-outline-primary col-5  showicons"><i class="fas fa-shopping-cart"></i>شراء</a>
+    <a href="#" class="btn btn-outline-primary col-5"><i class="fas fa-eye"></i>عرض</a>
+   </div>
+</div>
+
+<!-- ------------------------------------product16-------------------------------------------------------------- -->
+
+
+<div class="searchs p-0 col-lg-4 All galaxy imgs" style="width: 14rem; box-shadow:2px 2px 15px darkgrey;">
+  <img src="Images/galaxy/download (5).jpg" class="card-img-top" alt="This Bike GALAXY Gelaxy gelaxy galaxay">
+  <div class="text-center card-body">
+    <h5 class="card-title text-center check">جلاكسي</h5>
+    <p class="card-text check">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  </div>
+  <div class="icon text-center">
+    <i class="far fa-star p-1" style="color: rgb(243, 169, 9); font-size: larger; cursor: pointer;"></i>
+    <i class="far fa-star p-1" style="color: rgb(243, 169, 9); font-size: larger; cursor: pointer;"></i>
+    <i class="far fa-star p-1" style="color: rgb(243, 169, 9); font-size: larger; cursor: pointer;"></i>
+    <i class="far fa-star p-1" style="color: rgb(243, 169, 9); font-size: larger; cursor: pointer;"></i>
+    <i class="far fa-star p-1" style="color: rgb(243, 169, 9); font-size: larger; cursor: pointer;"></i>
+   </div>
+  <ul class="list-group list-group-flush" style="direction: rtl;">
+    <li class="check">النوع: دراجة هوائيه</li>
+    <li class="check">الماركه: جلاكسي</li>
+    <li class="check">المقاس: 29 جبلي</li>
+    <li class="check discount">السعر: <span class="discount">2900</span> جنيه</li>
+  </ul>
+  <div class="row justify-content-evenly mt-3 mb-3">
+    <a href="#" class="btn btn-outline-primary col-5  showicons"><i class="fas fa-shopping-cart"></i>شراء</a>
+    <a href="#" class="btn btn-outline-primary col-5"><i class="fas fa-eye"></i>عرض</a>
+   </div>
+</div>
+
+
+<!-- ------------------------------------product17-------------------------------------------------------------- -->
+
+
+<div class="searchs p-0 col-lg-4 All galaxy imgs" style="width: 14rem; box-shadow:2px 2px 15px darkgrey;">
+  <img src="Images/galaxy/images.jpg" class="card-img-top" alt="This Bike GALAXY Gelaxy gelaxy galaxay">
+  <div class="text-center card-body">
+    <h5 class="card-title text-center check">جلاكسي</h5>
+    <p class="card-text check">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  </div>
+  <div class="icon text-center">
+    <i class="far fa-star p-1" style="color: rgb(243, 169, 9); font-size: larger; cursor: pointer;"></i>
+    <i class="far fa-star p-1" style="color: rgb(243, 169, 9); font-size: larger; cursor: pointer;"></i>
+    <i class="far fa-star p-1" style="color: rgb(243, 169, 9); font-size: larger; cursor: pointer;"></i>
+    <i class="far fa-star p-1" style="color: rgb(243, 169, 9); font-size: larger; cursor: pointer;"></i>
+    <i class="far fa-star p-1" style="color: rgb(243, 169, 9); font-size: larger; cursor: pointer;"></i>
+   </div>
+  <ul class="list-group list-group-flush" style="direction: rtl;">
+    <li class="check">النوع: دراجة هوائيه</li>
+    <li class="check">الماركه: جلاكسي</li>
+    <li class="check">المقاس: 29 جبلي</li>
+    <li class="check discount">السعر: <span class="discount">3250</span> جنيه</li>
+  </ul>
+  <div class="row justify-content-evenly mt-3 mb-3">
+    <a href="#" class="btn btn-outline-primary col-5  showicons"><i class="fas fa-shopping-cart"></i>شراء</a>
+    <a href="#" class="btn btn-outline-primary col-5"><i class="fas fa-eye"></i>عرض</a>
+   </div>
+</div>
+
+
+<!-- ------------------------------------product18-------------------------------------------------------------- -->
+
+
+<div class="searchs p-0 col-lg-4 All galaxy imgs" style="width: 14rem; box-shadow:2px 2px 15px darkgrey; ">
+  <img src="Images/galaxy/item_XL_131945239_2dea2292a9d18.jpg" class="card-img-top" alt="This Bike GALAXY Gelaxy gelaxy galaxay">
+  <div class="text-center card-body">
+    <h5 class="card-title text-center check">جلاكسي</h5>
+    <p class="card-text check">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  </div>
+  <div class="icon text-center">
+    <i class="far fa-star p-1" style="color: rgb(243, 169, 9); font-size: larger; cursor: pointer;"></i>
+    <i class="far fa-star p-1" style="color: rgb(243, 169, 9); font-size: larger; cursor: pointer;"></i>
+    <i class="far fa-star p-1" style="color: rgb(243, 169, 9); font-size: larger; cursor: pointer;"></i>
+    <i class="far fa-star p-1" style="color: rgb(243, 169, 9); font-size: larger; cursor: pointer;"></i>
+    <i class="far fa-star p-1" style="color: rgb(243, 169, 9); font-size: larger; cursor: pointer;"></i>
+   </div>
+  <ul class="list-group list-group-flush" style="direction: rtl;">
+    <li class="check">النوع: دراجة هوائيه</li>
+    <li class="check">المارcheck
+    <li class="check">المقاس: 29 جبلي</li>
+    <li class="check discount">السعر: <span class="discount">3000</span> جنيه</li>
+  </ul>
+  <div class="row justify-content-evenly mt-3 mb-3">
+    <a href="#" class="btn btn-outline-primary col-5  showicons"><i class="fas fa-shopping-cart"></i>شراء</a>
+    <a href="#" class="btn btn-outline-primary col-5"><i class="fas fa-eye"></i>عرض</a>
+   </div>
+</div>
+
+
+
+</div>
+</div>
+
+    </div>
+
+
+
+
+
+
+
+    <!-- Footer -->
+<footer class="text-center text-lg-start bg-dark text-muted" id="conect" style="direction: rtl;">
+   <!-- Grid container -->
+   <div class="container p-4 pb-0">
+    <!-- Section: Social media -->
+    <section class="mb-4" style="float:right; width: 100%;">
+      
+      <!-- Facebook -->
+      <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/profile.php?id=100004970315797" role="button"
+        ><i class="fab fa-facebook-f"></i
+      ></a>
+
+      <!-- Twitter -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-twitter"></i
+      ></a>
+
+      <!-- what's -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-whatsapp"></i>
+      </a>
+
+       <!-- gmail's -->
+      <a href="https://mail.google.com/mail/u/0/#inbox" class="btn btn-outline-light">
+        <i class="fab fa-google"></i>
+      </a>
+      <!-- Instagram -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-instagram"></i
+      ></a>
+
+    
+    </section>
+    <!-- Section: Social media -->
+  </div>
+
+  <!-- Section: Links  -->
+  <section class="" style="direction: rtl;">
+    <div class="container text-center text-md-start mt-5" >
+      <!-- Grid row -->
+      <div class="row mt-3" style="text-align: right;">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <!-- Content -->
+          <h6 class="text-uppercase fw-bold mb-4 text-light">
+            <i class="fas fa-gem me-3 text-primary"></i>دراجتي
+          </h6>
+          <p>
+          
+            موقع ويب كامل متتكامل به كافه منتجات الدراجات الهوائيه وصيانتها يمكنك طلبها من المنزل والتوصيل مجانا داخل محافظه شمال-سيناء مدينه العريش
+         <span class="d-block">متوفر لدينا صيانه جميع انواع الدراجات الهوائيه</span>
+
+         <span class="d-block text-light pt-3">كل ماعليك انك تتواصل معنا</span>
+         <!-- <a href="https://wa.me/+201098648010" class="btn btn-outline-light"><i class="fab fa-whatsapp"></i></a>
+         <a class="btn btn-outline-light" href="https://www.facebook.com/profile.php?id=100004970315797" role="button"><i class="fab fa-facebook-f"></i></a>
+         <a href="https://mail.google.com/mail/u/0/#inbox" class="btn btn-outline-light">
+          <i class="fab fa-google"></i>
+        </a> -->
+          </p>
+        </div>
+    
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold text-light mb-4">
+            المنتجات
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">الدراجات</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">الاكسسوارات</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">منتجاتنا</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">قطع غيار</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold text-light mb-4">
+          اهداف الخدمه
+          </h6>
+          <p>
+            <span class="text-reset">الامان</span>
+          </p>
+          <p>
+            <span class="text-reset"> راحه العميل</span>
+          </p>
+          <p>
+            <span class="text-reset"> الثقه</span>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold text-light mb-4">
+            للتواصل معنا
+          </h6>
+          <p><i class="fas fa-home me-3 text-light"></i> New York, NY 10012, US</p>
+          <p>
+            <i class="fas fa-envelope me-3 text-light"></i>
+            info@example.com
+          </p>
+          <p><i class="fas fa-phone me-3 text-light"></i> + 01 234 567 88</p>
+          <p><i class="fas fa-print me-3 text-light"></i> + 01 234 567 89</p>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+  </section>
+  <!-- Section: Links  -->
+
+  <!-- Copyright -->
+  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+  حقوق النشر ©: اسلام خيال
+    <!-- <a class="text-reset fw-bold" href="https://eslamahmed5yal.netlify.app/">Web-Devolopment: Eslam A Mohamed</a> -->
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+    <script src="style.js"></script>
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- <script src="bootstrap/js/all.min.js"></script> -->
+</body>
+</html>
